@@ -129,7 +129,7 @@ a:hover{text-decoration: none;}
 /* Bloc image backgrounds */
 
 .bg-Img{
-	background-image:url('img/Img.jpg');
+	background-image:url('../img/Img.jpg');
 }
 
 /* NavBar */
