@@ -28,7 +28,7 @@ function scrollToTarget(D)
 	}
 	else // Specific Bloc
 	{
-		D = D.offset().top;
+		D = $(D).offset().top;
 	}
 
 	$('html,body').animate({scrollTop:D}, 'slow');
