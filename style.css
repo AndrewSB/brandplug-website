@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /*-----------------------------------------------------------------------------------*/
 /*	    Brandplug - Social Media Influencer Marketing
@@ -24,7 +24,9 @@ a{
 	cursor:pointer;
 }
 
-
+#roboto {
+	font-family: 'Roboto', serif;
+}
 
 
 /* Globals type styling */
