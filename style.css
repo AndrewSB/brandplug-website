@@ -372,6 +372,15 @@ iframe{
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+
+    .noright {
+    	padding-right: 15px;
+    }
+
+    .noleft {
+    	padding-left: 15px;
+    }
+
     .navbar-brand img{
         max-height: 40px;
         width:auto;
