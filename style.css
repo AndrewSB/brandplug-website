@@ -335,6 +335,14 @@ iframe{
 	border:0;
 }
 
+#no-right {
+	padding-right: 0px;
+}
+
+#no-left {
+	padding-left: 0px;
+}
+
 
 /* Mobile adjustments */
 
@@ -420,6 +428,14 @@ iframe{
     }
     .btn-dwn{
        display:none; 
+    }
+
+    #no-right {
+    	padding-right: 15px;
+    }
+
+    #no-left {
+    	padding-left: 15px;
     }
 
     .img-responsive {
