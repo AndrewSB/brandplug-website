@@ -7,56 +7,21 @@ $(function() {
 });
 
 function submitSignup(form) {
-  console.log(document.getElementById('register-form'));
+  console.log(document.getElementById('hero-username').value)
+  console.log(document.getElementById('hero-email').value)
+
+  var user = new Parse.User();
+  user.set("username", document.getElementById('hero-email').value)
+  user.set("email", document.getElementById('hero-email').value)
+  user.set("name", document.getElementById('hero-username').value)
+
+  user.signUp(null, {
+    success: function(user) {
+      alert("Awesome! We'll be in touch with you shortly with possible opputunities")
+      console.log("saved!")
+    }
+    error: function(user, error) {
+      alert("Error signing up: " + error.code + " " + error.message);
+      console.log("error saving :(")
+  })
 }
-
-$('#hero-submit').click(function(e){
-
-  console.log("here")
-
-  alert("Lol")
-
-      // Stop form submission & check the validation
-    //   e.preventDefault();
-    //
-    //   // Variable declaration
-    //   var error = false;
-    //   var fname = $('#hero-fname').val();
-    //   var email = $('#hero-email').val();
-    //   var username = $('#hero-username').val();
-    //
-    // // Form field validation
-    //   if(fname.length == 0){
-    //       var error = true;
-    //       $('#hero-fname').parent('div').addClass('field-error');
-    //   }else{
-    //       $('#hero-fname').parent('div').removeClass('field-error');
-    //   }
-    //   if(email.length == 0 || email.indexOf('@') == '-1'){
-    //       var error = true;
-    //       $('#hero-email').parent('div').addClass('field-error');
-    //   }else{
-    //       $('#hero-email').parent('div').removeClass('field-error');
-    //   }
-    //   if(username.length == 0){
-    //       var error = true;
-    //       $('#hero-username').parent('div').addClass('field-error');
-    //   }else{
-    //       $('#hero-username').parent('div').removeClass('field-error');
-    //   }
-    //
-    //   if(error == true){
-    //     $('#hero-error-notification').addClass('show-up');
-    //   }else{
-    //      $('#hero-error-notification').removeClass('show-up');
-    //   }
-    //
-    //   if(error == false){
-    //       $.post("hero-form.php", $("#register-form").serialize(),function(result){
-    //           if(result == 'sent'){
-    //               $('#hero-success-notification').addClass('show-up');
-    //               $('#hero-submit').addClass('disabled');
-    //           }
-    //       });
-    //   }
-  });
