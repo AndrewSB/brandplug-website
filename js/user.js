@@ -14,6 +14,7 @@ function submitSignup(form) {
   user.set("username", document.getElementById('hero-email').value)
   user.set("email", document.getElementById('hero-email').value)
   user.set("name", document.getElementById('hero-username').value)
+  user.save()
 
   user.signUp(null, {
     success: function(user) {
@@ -23,5 +24,11 @@ function submitSignup(form) {
     error: function(user, error) {
       alert("Error signing up: " + error.code + " " + error.message);
       console.log("error saving :(")
-  })
+    }
+}
+}
+
+
+function fooalso() {
+    alert('lol');
 }

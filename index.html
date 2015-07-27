@@ -11,9 +11,8 @@
 
 	    <title>Brandplug</title>
 
-			<script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
-			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-			<script src="js/user.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
 	    <!-- CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -152,37 +151,38 @@
 											Already have an account? <a href="#0" class="more">Log in here.</a>
 										</p>
 
-										<form class="register-form margin-top-32 margin-bot-5" id="register-form" method="post">
+										<form action="http://formspree.io/sam@brandplug.co" class="register-form margin-top-32 margin-bot-5" id="register-form" method="POST">
 											<div class="row">
 
 												<div class="col-lg-6 col-md-6">
 													<div class="required-field">
-														<input name="heroFname" id="hero-fname" class="hero-input btn btn-primary btn-lg"  type="text" placeholder="I'm an influencer">
+														<input name="influencer" id="hero-fname" class="hero-input btn btn-primary btn-lg"  type="text" placeholder="I'm an influencer">
 													</div> <!--/ .required-field -->
 												</div>
 
 												<div class="col-lg-6 col-md-6">
-													<input name="heroLname" id="hero-lname" class="hero-input btn btn-primary btn-lg"  type="text" placeholder="I'm a marketer">
+													<input name="marketer" id="hero-lname" class="hero-input btn btn-primary btn-lg"  type="text" placeholder="I'm a marketer">
 												</div>
 
 												<div class="col-lg-12 col-md-12">
 													<div class="required-field">
-														<input name="heroUsername" id="hero-username" class="hero-input"  type="text" placeholder="Full Name">
+														<input name="name" id="hero-username" class="hero-input"  type="text" placeholder="Full Name">
 													</div> <!--/ .required-field -->
 												</div>
 
 												<div class="col-lg-12 col-md-12">
 													<div class="required-field">
-														<input name="heroEmail" id="hero-email" class="hero-input"  type="text" placeholder="Email Address">
+														<input name="email" id="hero-email" class="hero-input"  type="text" placeholder="Email Address">
 													</div> <!--/ .required-field -->
 												</div>
 												<div class="col-lg-12 col-md-12">
 													<div class="required-field">
-														<input name="heroEmail" id="hero-email" class="hero-input"  type="text" placeholder="Primary Social Media Account">
+														<input name="email" id="hero-email" class="hero-input"  type="text" placeholder="Primary Social Media Account">
 													</div> <!--/ .required-field -->
 												</div>
 												<div class="col-lg-12 col-md-12">
-													<button onClick="submitSignup(this.form)" class="submit-btn">Sign Up</button>
+													<input type="submit" value="submit" class="submit-btn" />
+
 												</div>
 
 											</div>
