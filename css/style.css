@@ -2223,12 +2223,12 @@ a.scroll-link:hover {
  * -----------------------------------------------------------------------------
  */
 #how-it-works {
-	padding: 0;
+	padding: 50px 0 0 0;
 }
 
 ul.how-it-works-col li {
 	float: left;
-	padding: 120px 0 100px;
+	padding: 50px 0 100px;
 }
 
 .how-it-works-title img {
