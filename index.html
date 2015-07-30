@@ -148,16 +148,16 @@
 										<h4 class="all-caps margin-bot-15">Sign Up</h4>
 										<form action="http://formspree.io/contact@brandplug.co" class="register-form margin-top-32 margin-bot-5" id="register-form" method="POST">
 													<div class="radio-left">
-														<input type="radio" name="type" value="influencer" id="hero-fname" class="hero-input btn btn-primary btn-lg"  type="text">
+														<input type="radio" name="type" value="influencer" id="hero-fname" class="hero-fname hero-input btn btn-primary btn-lg"  type="text">
 														<label for="hero-fname">I'm an influencer</label>
 													</div>
 													<div class="radio-right">
-														<input type="radio"  name="type" value="marketer" id="hero-lname" class="hero-input btn btn-primary btn-lg"  type="text">
+														<input type="radio"  name="type" value="marketer" id="hero-lname" class="hero-lname hero-input btn btn-primary btn-lg"  type="text">
 														<label for="hero-lname">I'm a marketer</label>
 													</div>
 													<input name="name" id="hero-username" class="hero-input"  type="text" placeholder="Full Name">
 													<input name="email" id="hero-email" class="hero-input"  type="text" placeholder="Email Address">
-													<input name="email" id="hero-email" class="hero-input"  type="text" placeholder="Primary Social Media Account">
+													<input name="email" id="hero-email" class="hero-input hero-social"  type="text" placeholder="Primary Social Media Account">
 													<input type="submit" value="Sign up" class="submit-btn" />
 										</form>
 
@@ -662,6 +662,13 @@
 		=====================================
 		-->
 
+		<code style="display: none;">
+
+			clicking on ".hero-lname" adds class "uilang-hide" on ".hero-social"
+			clicking on ".hero-fname" removes class "uilang-hide" on ".hero-social"
+			
+		</code>
+
 
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -708,6 +715,9 @@
 
 		<!-- Expandable Navigation Menu -->
 		<script src="js/minified/expandableNav.min.js"></script>
+
+		<!-- Uilang -->
+		<script src="js/uilang.js"></script>
 
 
 	</body>

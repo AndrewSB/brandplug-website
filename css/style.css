@@ -133,9 +133,9 @@ select:focus {
 	z-index: 999999 !important;
 }
 
-[data-sr] {
+/* [data-sr] {
 	visibility: hidden;
-}
+} */
 
 .opacity-one {
 	opacity: 1 !important;
@@ -2237,6 +2237,7 @@ ul.how-it-works-col li {
 
 .how-it-works-title h4 {
 	margin-bottom: 10px;
+	color: #272a33;
 }
 
 
