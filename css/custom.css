@@ -136,6 +136,10 @@ input[type=radio]:checked + label {
 		padding: 0 0 50px 0;
 	}
 
+	.top-logo-text {
+		margin: 20px 0 0 0;
+	}
+
 }
 
 
