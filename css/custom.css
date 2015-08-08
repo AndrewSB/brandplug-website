@@ -129,7 +129,14 @@ input[type=radio]:checked + label {
 	margin-bottom: 0 !important;
 }
 
-
+.feature-image {
+	margin: 0 auto;
+    display: block;
+    height: 50px;
+    background-size: 70px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 @media (max-width: 992px) {
